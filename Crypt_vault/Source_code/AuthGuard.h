@@ -2,10 +2,6 @@
 #include <string>
 using namespace std;
 
-// ============================================================
-//  SECTION 4 — AUTH GUARD
-// ============================================================
-
 class AuthGuard {
     string masterHash;
     int    maxAttempts;

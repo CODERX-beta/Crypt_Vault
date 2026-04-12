@@ -3,10 +3,6 @@
 #include <string>
 using namespace std;
 
-// ============================================================
-//  SECTION 1 — POLYMORPHIC CIPHERS  (declarations)
-// ============================================================
-
 class Cipher {
 public:
     virtual void   encrypt(vector<char>& data) = 0;

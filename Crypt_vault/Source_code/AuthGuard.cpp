@@ -3,10 +3,6 @@
 #include <stdexcept>
 using namespace std;
 
-// ============================================================
-//  SECTION 4 — AUTH GUARD  (definitions)
-// ============================================================
-
 string AuthGuard::simpleHash(const string& s) {
     size_t h = 5381;
     for (unsigned char c : s) h = ((h << 5) + h) ^ c;

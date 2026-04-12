@@ -4,9 +4,7 @@
 #include <string>
 using namespace std;
 
-// ============================================================
-//  SECTION 5 — UI HELPERS  (declarations)
-// ============================================================
+
 
 static const string VAULT_FILE = "vault.dat";
 

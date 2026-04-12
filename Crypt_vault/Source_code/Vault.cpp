@@ -4,11 +4,6 @@
 #include <cstdio>
 using namespace std;
 
-// ============================================================
-//  SECTION 3 — VAULT  (definitions)
-// ============================================================
-
-// ---- CRUD --------------------------------------------------
 
 void Vault::add(const string& service, vector<char>&& encrypted) {
     storage[service] = move(encrypted);
@@ -24,7 +19,6 @@ bool Vault::exists(const string& service) const {
 
 bool Vault::empty() const { return storage.empty(); }
 
-// ---- Display -----------------------------------------------
 
 void Vault::listServices() const {
     if (storage.empty()) {
@@ -60,8 +54,6 @@ void Vault::showOne(const string& service, Cipher& c) const {
          << DataProtector<string>::recover(move(copy), c)
          << "\n";
 }
-
-// ---- Persistence -------------------------------------------
 
 void Vault::save(const string& filename) const {
     FILE* f = fopen(filename.c_str(), "wb");

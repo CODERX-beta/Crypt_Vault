@@ -3,9 +3,6 @@
 #include <limits>
 using namespace std;
 
-// ============================================================
-//  SECTION 5 — UI HELPERS  (definitions)
-// ============================================================
 
 void printBanner() {
     cout << "\n";

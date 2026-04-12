@@ -2,11 +2,6 @@
 #include <string>
 using namespace std;
 
-// ============================================================
-//  SECTION 1 — POLYMORPHIC CIPHERS  (definitions)
-// ============================================================
-
-// ---- XORCipher ---------------------------------------------
 
 XORCipher::XORCipher(char k) : key(k) {}
 
@@ -21,7 +16,6 @@ string XORCipher::name() const {
     return string("XOR  (key='") + key + "')";
 }
 
-// ---- CaesarCipher ------------------------------------------
 
 CaesarCipher::CaesarCipher(int s) : shift(s) {}
 
